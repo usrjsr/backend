@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <% if (typeof message !== 'undefined') { %>
+                <p class="error"><%= message %></p>
+            <% } %>
+            
+        <form action="/login" method="post">
+            <input placeholder="Enter Your Email" name="email" type="email">
+            <input placeholder="Enter Your Password" name="password" type="password">
+            <button type="submit">Login</button>
+        </form>
+    </main>
+</body>
+</html>
